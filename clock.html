@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="clearInterval(stop)">Stop Time</button>
+    <h2 id="test"></h2>
+
+    <script>
+        const stop = setInterval(function () {
+            const now = new Date();
+            var clock = now.toLocaleTimeString()
+            document.getElementById("test").innerHTML = clock;
+        }, 1000)
+
+
+        // function time() {
+        //     const now = new Date();
+        //     var clock = now.toLocaleTimeString()
+        //     document.getElementById("test").innerHTML = clock;
+        // }
+    </script>
+</body>
+
+</html>
